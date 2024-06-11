@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom Styles */
+        #home {
+            background-image: url('furn.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        #view-furniture-btn {
+            margin-top: 20px;
+        }
+
+        .card {
+            height: 100%;
+        }
+
+        .card-img-top {
+            height: 200px; /* Adjust the height as needed */
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Furniture Shop</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="toggleSection('home')">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="toggleSection('about')">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="toggleSection('contact')">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <h1 class="display-4">Welcome to Our Furniture Shop</h1>
+            <p class="lead">Find the best furniture for your home</p>
+            <button id="view-furniture-btn" class="btn btn-primary btn-lg" onclick="loadFurnitureContent()">View Furniture</button>
+
+        </div>
+    </section>
+
+    
+
+    <!-- About Us Section -->
+    <section id="about" class="py-5" style="display: none;">
+        <div class="container">
+            <h2 class="text-center">About Us</h2>
+            <p class="text-center"><p>
+                Welcome to Furniture Shop, your ultimate destination for premium-quality furniture at affordable prices. With years of experience in the industry, we are dedicated to providing our customers with an exceptional shopping experience and helping them create the home of their dreams.
+            </p>
+            <p>
+                At Furniture Shop, we believe that furniture is more than just functional; it's an expression of your style and personality. That's why we offer a diverse selection of furniture pieces, ranging from classic and timeless designs to modern and contemporary styles. Whether you're looking to furnish your living room, bedroom, dining room, or home office, we have everything you need to transform your space.
+            </p>
+            <p>
+                What sets us apart is our commitment to quality. We source our furniture from trusted manufacturers who use only the finest materials and craftsmanship to ensure durability and longevity. From solid wood and leather to metal and fabric, our furniture is built to last and withstand the test of time.
+            </p>
+            <p>
+                In addition to quality, we also prioritize affordability. We believe that everyone deserves to have a beautiful and comfortable home, which is why we offer competitive prices on all our products. Whether you're shopping on a tight budget or looking to splurge on a luxury piece, you'll find something that fits your needs and your wallet at Furniture Shop.
+            </p>
+            <p>
+                Customer satisfaction is at the heart of everything we do. Our team of friendly and knowledgeable staff is here to assist you every step of the way, from helping you find the perfect piece to providing expert advice on interior design. We also offer flexible delivery options to ensure that your furniture arrives safely and on time.
+            </p>
+            <p>
+                Thank you for choosing Furniture Shop. We're honored to be a part of your home furnishing journey and look forward to helping you create a space that reflects your unique style and personality.
+            </p>
+            </p>
+            </div>
+            
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="py-5" style="display: none;">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <form>
+                        <div class="form-group">
+                            
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript for toggling sections -->
+    <script>
+        function loadFurnitureContent() {
+            // Redirect to furniture.html
+            window.location.href = "furniture.html";
+        }
+        function toggleSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('section').forEach(function(section) {
+                section.style.display = 'none';
+            });
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Footer Section -->
+<footer class="footer mt-auto py-3 bg-dark text-white">
+    <div class="container text-center">
+        <p>&copy; 2024 Furniture Shop. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

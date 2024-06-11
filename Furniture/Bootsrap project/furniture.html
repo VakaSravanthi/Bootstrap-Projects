@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Shop</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color:blanchedalmond;
+        }
+        .card {
+            height: 100%;
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-body {
+            height: 200px; /* Adjust the height as needed */
+        }
+
+        /* Style for the "Home" nav link */
+        .navbar-nav .nav-link.home {
+            color: #ffffff; /* Text color */
+            background-color: #ff6600; /* Background color */
+            border-radius: 5px; /* Rounded corners */
+            padding: 8px 15px; /* Padding */
+        }
+
+        /* Style for the "Home" nav link on hover */
+        .navbar-nav .nav-link.home:hover {
+            background-color: #ff9933; /* Brighter background color on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Furniture Shop</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link home" href="index.html">Home</a> <!-- Added custom class "home" to style the link -->
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="furniture" class="py-5">
+        <div class="container">
+            <!-- Latest Furniture of Sofas Section -->
+            <h2 class="text-center">Latest Sofas</h2>
+            <div class="row">
+                <!-- Sofa 1 -->
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="sofa1.jpeg" class="card-img-top" alt="Sofa 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Sofa 1</h5>
+                            <p class="card-text">$500</p> 
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sofa 2 -->
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="sofa2.jpg" class="card-img-top" alt="Sofa 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Sofa 2</h5>
+                            <p class="card-text">$700</p> 
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sofa 3 -->
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="sofa3.jpeg" class="card-img-top" alt="Sofa 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Sofa 3</h5>
+                            <p class="card-text">$600</p> 
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Latest Furniture of TVs Section -->
+            <h2 class="text-center">Latest TVs</h2>
+            <div class="row">
+                <!-- TV 1 -->
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="din1.jpg" class="card-img-top" alt="TV 1">
+                        <div class="card-body">
+                            <h5 class="card-title">TV 1</h5>
+                            <p class="card-text">$400</p> 
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- TV 2 -->
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="din2.jpeg" class="card-img-top" alt="TV 2">
+                        <div class="card-body">
+                            <h5 class="card-title">TV 2</h5>
+                            <p class="card-text">$500</p> 
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- TV 3 -->
+                <div class="col-lg-4">
+                    <div class="card">
+                        <img src="din3.jpg" class="card-img-top" alt="TV 3">
+                        <div class="card-body">
+                            <h5 class="card-title">TV 3</h5>
+                            <p class="card-text">$800</p> 
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
